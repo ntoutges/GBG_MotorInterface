@@ -82,9 +82,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "Gerbers/")
 		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
@@ -7556,12 +7556,12 @@
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "J106"
-			(at 0 -2.38 180)
+			(at 0.508 8.636 180)
 			(layer "F.SilkS")
 			(uuid "86955d49-b7e7-4e78-9784-d0dc06332dae")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.8 0.8)
 					(thickness 0.15)
 				)
 			)
@@ -14595,6 +14595,18 @@
 				(size 0.8 0.8)
 				(thickness 0.16)
 				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "Bypass"
+		(at 117.856 73.922 0)
+		(layer "F.SilkS")
+		(uuid "8862926e-91ff-4b42-828c-faa50f4e1a7e")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.1)
 			)
 			(justify bottom)
 		)
