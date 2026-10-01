@@ -1359,7 +1359,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Converter_DCDC:R-78E5.0-0.5"
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -1368,18 +1371,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R-78E5.0-0.5"
-				(at 0 3.175 0)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1389,20 +1382,29 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT"
-				(at 1.27 -6.35 0)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(justify left)
 				)
 			)
-			(property "Datasheet" "https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf"
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1413,7 +1415,7 @@
 					)
 				)
 			)
-			(property "Description" "500mA Step-Down DC/DC-Regulator, 7-28V input, 5V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, SIP3"
+			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1424,7 +1426,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "dc-dc recom Step-Down DC/DC-Regulator"
+			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1435,7 +1437,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Converter*DCDC*RECOM*R*78E*0.5*"
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1446,24 +1448,37 @@
 					)
 				)
 			)
-			(symbol "R-78E5.0-0.5_0_1"
-				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
 					(stroke
-						(width 0.254)
+						(width 0.508)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
-			(symbol "R-78E5.0-0.5_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "IN"
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1478,10 +1493,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1489,24 +1504,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1751,6 +1748,163 @@
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_Linear:LM7805_TO220"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LM7805_TO220"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+				(at 0 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Voltage Regulator 1A Positive"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO?220*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LM7805_TO220_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LM7805_TO220_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2224,7 +2378,7 @@
 	)
 	(rectangle
 		(start 113.03 17.78)
-		(end 140.97 63.5)
+		(end 140.97 69.85)
 		(stroke
 			(width 0)
 			(type default)
@@ -2291,6 +2445,17 @@
 		)
 		(uuid "1bc8500d-530e-431e-95a1-7a6241c11c9a")
 	)
+	(text "Max Vcc limited by\nSN74HC244 buffer\n7V MAX"
+		(exclude_from_sim no)
+		(at 146.05 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3279eb2b-d627-4602-8dba-575aba4e20fa")
+	)
 	(text "Includes input signal attenuation (if required)"
 		(exclude_from_sim no)
 		(at 47.244 69.85 0)
@@ -2315,7 +2480,7 @@
 	)
 	(text "5V Rail Regulator"
 		(exclude_from_sim no)
-		(at 113.284 65.024 0)
+		(at 112.776 71.628 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -2337,7 +2502,7 @@
 	)
 	(text "Generate 5V from +12V\nRemove and bypass if\nrunning on +6V battery,\ndue to minimum working\nvoltage of LM7805\nregulator\nIf using MCU: NO BYPASS"
 		(exclude_from_sim no)
-		(at 113.284 68.072 0)
+		(at 112.776 74.676 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2402,22 +2567,22 @@
 		(uuid "e55570dd-18b3-428e-bb70-87140da4c584")
 	)
 	(junction
-		(at 137.16 33.02)
+		(at 116.84 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4efc9c74-728a-47e3-acf9-a733fd2e617c")
+		(uuid "02e3d538-f73b-41cd-ba72-2e70e53db491")
+	)
+	(junction
+		(at 116.84 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41d94f60-2d96-40a4-b7e5-18a6c7311305")
 	)
 	(junction
 		(at 147.32 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a4e2827-14c2-4749-81c5-5332cbe304da")
-	)
-	(junction
-		(at 116.84 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba2788b4-7efa-42d6-81b7-9481de0aa589")
 	)
 	(junction
 		(at 186.69 43.18)
@@ -2436,10 +2601,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f621921a-eb1f-466a-93df-ddfa7dedc0e5")
-	)
-	(no_connect
-		(at 124.46 30.48)
-		(uuid "2cf11939-1214-4c23-8970-89dc5c144a82")
 	)
 	(no_connect
 		(at 181.61 35.56)
@@ -2639,16 +2800,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 25.4) (xy 116.84 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38ff6e92-7a30-4295-a6d4-775746f20274")
-	)
-	(wire
-		(pts
 			(xy 119.38 45.72) (xy 116.84 45.72)
 		)
 		(stroke
@@ -2669,6 +2820,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 29.21) (xy 127 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e889f0b-9de7-4c7b-99ce-36eacf038548")
+	)
+	(wire
+		(pts
 			(xy 69.85 82.55) (xy 69.85 85.09)
 		)
 		(stroke
@@ -2676,6 +2837,16 @@
 			(type default)
 		)
 		(uuid "3f4c6d8b-6b43-4886-8a56-5967b92d0316")
+	)
+	(wire
+		(pts
+			(xy 116.84 29.21) (xy 116.84 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4101b846-1d7c-4f25-bdfd-afdeea3f08ae")
 	)
 	(wire
 		(pts
@@ -2739,6 +2910,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 34.29) (xy 127 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4add5661-579e-4485-b405-f34cc42c6942")
+	)
+	(wire
+		(pts
 			(xy 208.28 27.94) (xy 186.69 27.94)
 		)
 		(stroke
@@ -2769,13 +2950,13 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 33.02) (xy 127 33.02)
+			(xy 124.46 25.4) (xy 124.46 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "51648cc6-95ee-4599-a9e8-f808b90f4779")
+		(uuid "514240f5-7839-4e1e-8fdc-0a9f02e722f6")
 	)
 	(wire
 		(pts
@@ -2889,26 +3070,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 30.48) (xy 129.54 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "766c0955-17e5-4a25-94e5-f38f84b9a94b")
-	)
-	(wire
-		(pts
-			(xy 127 33.02) (xy 127 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ceb643e-ef68-44e1-90c3-72fadd8f8296")
-	)
-	(wire
-		(pts
 			(xy 158.75 45.72) (xy 147.32 45.72)
 		)
 		(stroke
@@ -2946,6 +3107,16 @@
 			(type default)
 		)
 		(uuid "83f515c6-4ca9-4b57-9156-effc671773e3")
+	)
+	(wire
+		(pts
+			(xy 116.84 59.69) (xy 116.84 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "870467ab-df4a-4f96-95d3-11536914c062")
 	)
 	(wire
 		(pts
@@ -3006,6 +3177,16 @@
 			(type default)
 		)
 		(uuid "9eb575c0-80e6-4961-84d9-fda33b230515")
+	)
+	(wire
+		(pts
+			(xy 116.84 45.72) (xy 116.84 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1e685ec-cf9e-448a-a4c7-d15c79f0a76d")
 	)
 	(wire
 		(pts
@@ -3089,16 +3270,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 33.02) (xy 137.16 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2fd7c39-5d45-4a68-8a3b-dc306eb1fd4d")
-	)
-	(wire
-		(pts
 			(xy 58.42 87.63) (xy 55.88 87.63)
 		)
 		(stroke
@@ -3126,6 +3297,26 @@
 			(type default)
 		)
 		(uuid "c8ae6f48-4ebb-480b-8cff-0e02d0f21527")
+	)
+	(wire
+		(pts
+			(xy 137.16 45.72) (xy 137.16 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca27be39-9d9f-424c-8bb5-76c421f29f74")
+	)
+	(wire
+		(pts
+			(xy 137.16 36.83) (xy 124.46 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce0704ee-5348-47f1-94fd-5fb2015d4b34")
 	)
 	(wire
 		(pts
@@ -3189,6 +3380,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 31.75) (xy 124.46 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d594dea7-3c35-45b8-9952-d28278b472c7")
+	)
+	(wire
+		(pts
 			(xy 184.15 130.81) (xy 184.15 134.62)
 		)
 		(stroke
@@ -3249,7 +3450,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 33.02) (xy 116.84 45.72)
+			(xy 116.84 25.4) (xy 116.84 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3299,16 +3500,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 33.02) (xy 137.16 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eeb67ebc-fd9b-4927-aba7-36f5e420c977")
-	)
-	(wire
-		(pts
 			(xy 196.85 137.16) (xy 196.85 139.7)
 		)
 		(stroke
@@ -3339,13 +3530,13 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 25.4) (xy 137.16 33.02)
+			(xy 124.46 36.83) (xy 124.46 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ff6bef21-b645-445f-a99d-45f268d5f298")
+		(uuid "fbbc3b49-4ae3-4e6f-b53b-69c2cdf7b1c9")
 	)
 	(global_label "KRi"
 		(shape input)
@@ -5194,8 +5385,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 127 25.4 270)
+		(lib_id "Device:C")
+		(at 116.84 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5203,30 +5394,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "746c8846-cf48-4651-8dfa-7bd4c0bfaeb2")
-		(property "Reference" "J106"
-			(at 127 20.32 90)
+		(uuid "6423bd23-872b-4fb3-9949-409206199189")
+		(property "Reference" "C102"
+			(at 120.65 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Bypass"
-			(at 127 22.86 90)
+		(property "Value" "0.22uF"
+			(at 117.856 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 127 25.4 0)
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
+			(at 117.8052 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5237,7 +5429,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 25.4 0)
+			(at 116.84 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 116.84 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "75fa4efa-91f8-4018-9e96-d75f86918746")
+		)
+		(pin "2"
+			(uuid "09269fc9-1abd-4bf0-9c14-21f61bc447fc")
+		)
+		(instances
+			(project "GBG_Motors"
+				(path "/e3f71057-02b7-45a4-9125-5183de1d436b"
+					(reference "C102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 132.08 31.75 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "746c8846-cf48-4651-8dfa-7bd4c0bfaeb2")
+		(property "Reference" "J106"
+			(at 137.16 31.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Bypass"
+			(at 134.62 31.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 132.08 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5248,7 +5520,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 127 25.4 0)
+			(at 132.08 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5532,8 +5804,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Converter_DCDC:R-78E5.0-0.5")
-		(at 127 45.72 0)
+		(lib_id "power:GND")
+		(at 116.84 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5542,42 +5814,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8a2256b7-61d3-4004-b71f-6f6cca628497")
-		(property "Reference" "U103"
-			(at 127 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R-78E5.0-0.5"
-			(at 127 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT"
-			(at 128.27 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf"
-			(at 127 45.72 0)
+		(uuid "8e8d3a34-76a0-4e15-b53f-92b073d92bb7")
+		(property "Reference" "#PWR0109"
+			(at 116.84 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5587,8 +5826,40 @@
 				)
 			)
 		)
-		(property "Description" "500mA Step-Down DC/DC-Regulator, 7-28V input, 5V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, SIP3"
-			(at 127 45.72 0)
+		(property "Value" "GND"
+			(at 116.84 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5599,18 +5870,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5561826f-8acb-405e-aa60-df0468cfd313")
-		)
-		(pin "2"
-			(uuid "2b12909c-6157-462e-b22d-c95a7ead6c15")
-		)
-		(pin "3"
-			(uuid "38f456ee-b757-4ba3-8a73-3c40a0c09bd8")
+			(uuid "e7e96ad2-053a-4564-b4dd-6af39c52cdac")
 		)
 		(instances
 			(project "GBG_Motors"
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b"
-					(reference "U103")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -6109,7 +6374,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 137.16 25.4 0)
+		(at 124.46 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6120,7 +6385,7 @@
 		(fields_autoplaced yes)
 		(uuid "eb986d5b-048e-4b80-acf3-9d9ea831733a")
 		(property "Reference" "#PWR0106"
-			(at 137.16 29.21 0)
+			(at 124.46 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6131,7 +6396,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 137.16 20.32 0)
+			(at 124.46 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6141,7 +6406,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 25.4 0)
+			(at 124.46 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6152,7 +6417,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 25.4 0)
+			(at 124.46 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6163,7 +6428,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 137.16 25.4 0)
+			(at 124.46 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6280,6 +6545,90 @@
 			(project "GBG_Motors"
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b"
 					(reference "U102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:LM7805_TO220")
+		(at 127 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f44ce182-5e98-4d2a-992f-995dc85a923b")
+		(property "Reference" "U103"
+			(at 127 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM7805_TO220"
+			(at 127 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 127 40.005 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
+			(at 127 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
+			(at 127 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "a3280e2d-526c-4ef1-9ec2-ad3d460f053a")
+		)
+		(pin "2"
+			(uuid "a4afb85a-076b-4f97-8fe2-479739b23343")
+		)
+		(pin "1"
+			(uuid "09d99163-343f-4cbc-8e4b-6ce8406a9697")
+		)
+		(instances
+			(project "GBG_Motors"
+				(path "/e3f71057-02b7-45a4-9125-5183de1d436b"
+					(reference "U103")
 					(unit 1)
 				)
 			)

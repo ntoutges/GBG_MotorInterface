@@ -78,16 +78,40 @@
       ],
       "drc_exclusions": [
         [
-          "lib_footprint_mismatch|111826000|76708000|381b3d90-f738-4192-95a7-dea2be6347dd|00000000-0000-0000-0000-000000000000",
+          "lib_footprint_mismatch|111186000|76708000|4c8593d0-8e3b-4464-a9a0-3b464c543b0a|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|115593883|76935597|9c53953b-1bfd-4486-88ef-e24c7a4348b5|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|119380000|78232000|9e3b907f-4967-4648-bbd9-d012d3ca4cbb|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|188432000|115914000|f34cfed0-3d7f-4df8-85ae-2fe20cc56e45|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|188432000|65696000|1ad1178c-2211-4713-a95a-183d01f7e001|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "starved_thermal|105179319|77476679|bbe48648-44b9-44da-9f99-a2f1d51858a8|f186eef1-7e86-44c2-a972-5087addb6f3f|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|110236000|76708000|bbe48648-44b9-44da-9f99-a2f1d51858a8|bbc2cd61-d126-4cf9-a378-255252cdcd2a|B.Cu",
           ""
         ],
         [
           "starved_thermal|126268000|88646000|bbe48648-44b9-44da-9f99-a2f1d51858a8|b4e8666a-d420-4ad9-a8b1-a7c740cf8069|B.Cu",
-          "Connected to GND via explicit copper trace"
+          ""
         ],
         [
           "starved_thermal|126268000|96266000|bbe48648-44b9-44da-9f99-a2f1d51858a8|4d649819-966b-46be-be19-978b0ff20a83|B.Cu",
-          "Connected to GND via explicit copper trace"
+          ""
         ]
       ],
       "meta": {
@@ -551,7 +575,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "Gerbers/",
+      "plot": "",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -688,7 +712,7 @@
         "uuid": "e3f71057-02b7-45a4-9125-5183de1d436b"
       }
     ],
-    "used_designators": "J106",
+    "used_designators": "U1-2,U101-103,U601,U701,U801,Q601-602,Q701,Q801,#PWR1-7,#PWR101-113,#PWR301,#PWR401,#PWR501,#PWR601-611,#PWR701-710,#PWR801-810,J1-3,J101-105,J601-602,J701,J801,JP1-2,JP101-103,JP201,JP301,JP401,JP501,JP601-603,JP701-703,JP801-803,JP901-902,R1-2,R201-202,R301-302,R401-402,R501-502,R601-607,R701-706,R801-806,C101-102,C601-602,C701-702,C801-802",
     "variants": []
   },
   "sheets": [
