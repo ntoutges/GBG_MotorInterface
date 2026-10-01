@@ -406,6 +406,228 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x03_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x06_Pin"
 			(pin_names
 				(offset 1.016)
@@ -1285,172 +1507,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Jumper:Jumper_2_Open"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "JP"
-				(at 0 2.794 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_2_Open"
-				(at 0 -2.286 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Jumper, 2-pole, open"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Jumper_2_Open_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Open_0_1"
-				(arc
-					(start -1.524 1.27)
-					(mid 0 1.778)
-					(end 1.524 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Open_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2346,10 +2402,10 @@
 		(uuid "e55570dd-18b3-428e-bb70-87140da4c584")
 	)
 	(junction
-		(at 137.16 27.94)
+		(at 137.16 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "34e2f4ba-f831-4272-824a-f22a53e4cf79")
+		(uuid "4efc9c74-728a-47e3-acf9-a733fd2e617c")
 	)
 	(junction
 		(at 147.32 43.18)
@@ -2358,10 +2414,10 @@
 		(uuid "8a4e2827-14c2-4749-81c5-5332cbe304da")
 	)
 	(junction
-		(at 116.84 27.94)
+		(at 116.84 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b019f99f-d8d7-4c63-8f52-f54355133efa")
+		(uuid "ba2788b4-7efa-42d6-81b7-9481de0aa589")
 	)
 	(junction
 		(at 186.69 43.18)
@@ -2380,6 +2436,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f621921a-eb1f-466a-93df-ddfa7dedc0e5")
+	)
+	(no_connect
+		(at 124.46 30.48)
+		(uuid "2cf11939-1214-4c23-8970-89dc5c144a82")
 	)
 	(no_connect
 		(at 181.61 35.56)
@@ -2489,16 +2549,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 25.4) (xy 137.16 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e9ad43c-40c9-4079-b40c-f08ea029d2d1")
-	)
-	(wire
-		(pts
 			(xy 58.42 85.09) (xy 55.88 85.09)
 		)
 		(stroke
@@ -2589,7 +2639,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 27.94) (xy 116.84 25.4)
+			(xy 116.84 25.4) (xy 116.84 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2606,16 +2656,6 @@
 			(type default)
 		)
 		(uuid "3a265506-b148-46d8-aeda-5ce53816bcd8")
-	)
-	(wire
-		(pts
-			(xy 116.84 27.94) (xy 121.92 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ac2d818-9311-4cdc-961e-b7d6272450cb")
 	)
 	(wire
 		(pts
@@ -2729,6 +2769,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 33.02) (xy 127 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51648cc6-95ee-4599-a9e8-f808b90f4779")
+	)
+	(wire
+		(pts
 			(xy 215.9 95.25) (xy 218.44 95.25)
 		)
 		(stroke
@@ -2839,6 +2889,26 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 30.48) (xy 129.54 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "766c0955-17e5-4a25-94e5-f38f84b9a94b")
+	)
+	(wire
+		(pts
+			(xy 127 33.02) (xy 127 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ceb643e-ef68-44e1-90c3-72fadd8f8296")
+	)
+	(wire
+		(pts
 			(xy 158.75 45.72) (xy 147.32 45.72)
 		)
 		(stroke
@@ -2916,16 +2986,6 @@
 			(type default)
 		)
 		(uuid "9b99733d-c3b5-47bb-980e-34c44cd6a264")
-	)
-	(wire
-		(pts
-			(xy 116.84 45.72) (xy 116.84 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9cdf7798-f3ed-4fda-8eda-0b4f39532264")
 	)
 	(wire
 		(pts
@@ -3029,6 +3089,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 33.02) (xy 137.16 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2fd7c39-5d45-4a68-8a3b-dc306eb1fd4d")
+	)
+	(wire
+		(pts
 			(xy 58.42 87.63) (xy 55.88 87.63)
 		)
 		(stroke
@@ -3129,16 +3199,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 27.94) (xy 137.16 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8dbe2be-2912-4c5d-9378-3e869fed93ec")
-	)
-	(wire
-		(pts
 			(xy 186.69 43.18) (xy 196.85 43.18)
 		)
 		(stroke
@@ -3189,6 +3249,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 33.02) (xy 116.84 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e43592ff-af9a-424c-a7bd-2b8ab022abe5")
+	)
+	(wire
+		(pts
 			(xy 170.18 25.4) (xy 170.18 27.94)
 		)
 		(stroke
@@ -3229,6 +3299,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 33.02) (xy 137.16 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeb67ebc-fd9b-4927-aba7-36f5e420c977")
+	)
+	(wire
+		(pts
 			(xy 196.85 137.16) (xy 196.85 139.7)
 		)
 		(stroke
@@ -3259,7 +3339,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 27.94) (xy 137.16 45.72)
+			(xy 137.16 25.4) (xy 137.16 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5114,6 +5194,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 127 25.4 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "746c8846-cf48-4651-8dfa-7bd4c0bfaeb2")
+		(property "Reference" "J106"
+			(at 127 20.32 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Bypass"
+			(at 127 22.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+			(at 127 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 127 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "03c2573f-3a12-4f3d-b739-429b8fa50f5b")
+		)
+		(pin "2"
+			(uuid "67d7aa4c-2e43-4d6f-a524-baf3cf04a81e")
+		)
+		(pin "3"
+			(uuid "65d72acf-3d98-4d1f-b546-3e6a66d188b9")
+		)
+		(instances
+			(project "GBG_Motors"
+				(path "/e3f71057-02b7-45a4-9125-5183de1d436b"
+					(reference "J106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 170.18 54.61 0)
 		(unit 1)
@@ -5767,86 +5930,6 @@
 			(project "GBG_Motors"
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b"
 					(reference "JP101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 127 27.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bfd44bcb-d968-4f1e-9e2e-f0dfbbfc72e1")
-		(property "Reference" "JP103"
-			(at 127 21.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Regulator Bypass"
-			(at 127 24.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 127 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 127 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1fe436ea-43cb-4424-910a-f46539f6c85d")
-		)
-		(pin "1"
-			(uuid "ea9e365e-c1ef-4ca1-a95f-96f29a22da7a")
-		)
-		(instances
-			(project "GBG_Motors"
-				(path "/e3f71057-02b7-45a4-9125-5183de1d436b"
-					(reference "JP103")
 					(unit 1)
 				)
 			)

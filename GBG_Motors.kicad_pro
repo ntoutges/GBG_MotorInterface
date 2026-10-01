@@ -78,6 +78,10 @@
       ],
       "drc_exclusions": [
         [
+          "lib_footprint_mismatch|111826000|76708000|381b3d90-f738-4192-95a7-dea2be6347dd|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "starved_thermal|126268000|88646000|bbe48648-44b9-44da-9f99-a2f1d51858a8|b4e8666a-d420-4ad9-a8b1-a7c740cf8069|B.Cu",
           "Connected to GND via explicit copper trace"
         ],
@@ -684,7 +688,7 @@
         "uuid": "e3f71057-02b7-45a4-9125-5183de1d436b"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J106",
     "variants": []
   },
   "sheets": [
