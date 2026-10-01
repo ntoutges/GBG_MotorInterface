@@ -2869,7 +2869,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "30184606-50b9-4083-87cb-a104c5ff7caf")
-		(property "Reference" "R607"
+		(property "Reference" "R605"
 			(at 118.618 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2937,7 +2937,7 @@
 					(unit 1)
 				)
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/7b5dadd4-4dea-49c5-be78-f4ebd2518203"
-					(reference "R607")
+					(reference "R605")
 					(unit 1)
 				)
 			)
@@ -3208,7 +3208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "508b5b20-6ff7-4888-a57c-19ab6eb129bd")
-		(property "Reference" "Q602"
+		(property "Reference" "Q601"
 			(at 123.19 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3312,7 +3312,7 @@
 					(unit 1)
 				)
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/7b5dadd4-4dea-49c5-be78-f4ebd2518203"
-					(reference "Q602")
+					(reference "Q601")
 					(unit 1)
 				)
 			)
@@ -3330,7 +3330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5abc715d-c3da-489b-bda3-524e99ee8d10")
-		(property "Reference" "JP602"
+		(property "Reference" "JP601"
 			(at 46.99 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3396,7 +3396,7 @@
 					(unit 1)
 				)
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/7b5dadd4-4dea-49c5-be78-f4ebd2518203"
-					(reference "JP602")
+					(reference "JP601")
 					(unit 1)
 				)
 			)
@@ -3670,7 +3670,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f7429a8-0d72-455d-b357-dc598c44fe7d")
-		(property "Reference" "JP601"
+		(property "Reference" "JP602"
 			(at 74.93 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3739,7 +3739,7 @@
 					(unit 1)
 				)
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/7b5dadd4-4dea-49c5-be78-f4ebd2518203"
-					(reference "JP601")
+					(reference "JP602")
 					(unit 1)
 				)
 			)
@@ -4023,7 +4023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92743d2c-b935-4f6d-9abe-c569ac560e7a")
-		(property "Reference" "R605"
+		(property "Reference" "R607"
 			(at 129.54 35.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4091,7 +4091,7 @@
 					(unit 1)
 				)
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/7b5dadd4-4dea-49c5-be78-f4ebd2518203"
-					(reference "R605")
+					(reference "R607")
 					(unit 1)
 				)
 			)

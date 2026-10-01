@@ -69,8 +69,23 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "starved_thermal|126268000|88646000|bbe48648-44b9-44da-9f99-a2f1d51858a8|b4e8666a-d420-4ad9-a8b1-a7c740cf8069|B.Cu",
+          "Connected to GND via explicit copper trace"
+        ],
+        [
+          "starved_thermal|126268000|96266000|bbe48648-44b9-44da-9f99-a2f1d51858a8|4d649819-966b-46be-be19-978b0ff20a83|B.Cu",
+          "Connected to GND via explicit copper trace"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -80,7 +95,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -115,8 +130,8 @@
         "pth_inside_courtyard": "error",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -203,7 +218,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +248,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -661,7 +684,7 @@
         "uuid": "e3f71057-02b7-45a4-9125-5183de1d436b"
       }
     ],
-    "used_designators": "U1-2,U101-103,U601,U701,U801,Q601-602,Q701,Q801,#PWR1-7,#PWR101-112,#PWR301,#PWR401,#PWR501,#PWR601-611,#PWR701-710,#PWR801-810,J1-3,J101-105,J601-602,J701,J801,JP1-2,JP101-103,JP201,JP301,JP401,JP501,JP601-603,JP701-703,JP801-803,JP901-902,R1-2,R201-202,R301-302,R401-402,R501-502,R601-607,R701-706,R801-806,C601-602,C701-702,C801-802",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

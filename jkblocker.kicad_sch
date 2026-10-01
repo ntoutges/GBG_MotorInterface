@@ -404,7 +404,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "12f21659-5c09-4f70-acef-51d3f2ba095e")
-		(property "Reference" "JP803"
+		(property "Reference" "JP802"
 			(at 156.21 105.4099 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -475,7 +475,7 @@
 					(unit 1)
 				)
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/e09b614a-aee1-4e93-a129-1f0bfe5e2d84"
-					(reference "JP803")
+					(reference "JP802")
 					(unit 1)
 				)
 			)
@@ -493,7 +493,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f2813b63-c51b-4d3f-aa3c-ae8a0a014bc8")
-		(property "Reference" "JP802"
+		(property "Reference" "JP801"
 			(at 133.35 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -564,7 +564,7 @@
 					(unit 1)
 				)
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/e09b614a-aee1-4e93-a129-1f0bfe5e2d84"
-					(reference "JP802")
+					(reference "JP801")
 					(unit 1)
 				)
 			)
