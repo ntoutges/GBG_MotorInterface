@@ -2064,12 +2064,6 @@
 		(uuid "8e97ad30-33c5-4583-822d-c42ba48c78c0")
 	)
 	(junction
-		(at 87.63 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ab59f9a3-29f0-451e-adb0-945f41ea5151")
-	)
-	(junction
 		(at 127 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2104,16 +2098,6 @@
 			(type default)
 		)
 		(uuid "11068804-f44f-41fd-a245-8adb285cfbfb")
-	)
-	(wire
-		(pts
-			(xy 87.63 72.39) (xy 90.17 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "118fb5f4-65d0-4274-bd43-6ad46954478d")
 	)
 	(wire
 		(pts
@@ -2204,16 +2188,6 @@
 			(type default)
 		)
 		(uuid "469ca4e8-d3d3-416d-a272-3ef79540de07")
-	)
-	(wire
-		(pts
-			(xy 87.63 74.93) (xy 87.63 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d7ed254-7a17-411f-8111-0492b35626c9")
 	)
 	(wire
 		(pts
@@ -2357,7 +2331,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 72.39) (xy 87.63 72.39)
+			(xy 71.12 72.39) (xy 90.17 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2474,16 +2448,6 @@
 			(type default)
 		)
 		(uuid "bd1cce9e-e54b-41e4-a83a-63973bb375e7")
-	)
-	(wire
-		(pts
-			(xy 87.63 82.55) (xy 87.63 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c89fcc59-498e-4110-8cb1-0063c73cca79")
 	)
 	(wire
 		(pts
@@ -2944,88 +2908,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 87.63 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3bea8286-01b2-49b0-b116-28291c00833e")
-		(property "Reference" "#PWR0603"
-			(at 87.63 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 87.63 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "21ccd267-cd4a-4ab4-9c2d-da7742f97aa3")
-		)
-		(instances
-			(project "GBG_Motors"
-				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/29ea8377-c72d-49b7-85fa-ba09c5d0bc93"
-					(reference "#PWR0702")
-					(unit 1)
-				)
-				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/7b5dadd4-4dea-49c5-be78-f4ebd2518203"
-					(reference "#PWR0603")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 59.69 71.12 0)
 		(unit 1)
@@ -3047,7 +2929,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 62.23 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3681,7 +3563,7 @@
 			)
 		)
 		(property "Value" "redirect"
-			(at 77.47 64.77 0)
+			(at 77.47 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4176,92 +4058,6 @@
 				)
 				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/7b5dadd4-4dea-49c5-be78-f4ebd2518203"
 					(reference "R604")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 87.63 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b0ce167a-5698-4370-88da-b7dc4e2b05bf")
-		(property "Reference" "R602"
-			(at 90.17 77.4699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 90.17 80.0099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 88.646 78.994 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 87.63 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1c727ccf-60d4-4a40-b233-c844274a95c1")
-		)
-		(pin "2"
-			(uuid "df162c6f-fb45-4c28-b51d-6f1c3ecbd04f")
-		)
-		(instances
-			(project "GBG_Motors"
-				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/29ea8377-c72d-49b7-85fa-ba09c5d0bc93"
-					(reference "R702")
-					(unit 1)
-				)
-				(path "/e3f71057-02b7-45a4-9125-5183de1d436b/7b5dadd4-4dea-49c5-be78-f4ebd2518203"
-					(reference "R602")
 					(unit 1)
 				)
 			)

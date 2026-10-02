@@ -689,7 +689,7 @@
 				)
 			)
 		)
-		(property "Value" "RA"
+		(property "Value" "1k"
 			(at 120.65 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -874,7 +874,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RB"
+		(property "Value" "2k"
 			(at 134.62 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
